@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Majors
+    </title>
+  <link rel="stylesheet" href="Majors.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+    </symbol>
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </symbol>
+  </svg>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.jpg" style="width:250px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Intro.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Introduction with Navigation">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Admissions.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how you can apply for college & requirements">Admissions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Location.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how location affects college choice.">Location</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to a list of colleges from each state">
+                  States
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/alabama/" target="_blank">Alabama</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/alaska/" target="_blank">Alaska</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/arizona/" target="_blank">Arizona</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/arkansas/" target="_blank">Arkansas</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/california/" target="_blank">California</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/colorado/" target="_blank">Colorado</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/connecticut/" target="_blank">Connecticut</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/delaware/" target="_blank">Delaware</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/district-of-columbia/" target="_blank">District of Columbia</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/florida/" target="_blank">Florida</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/georgia/" target="_blank">Georgia</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/hawaii/" target="_blank">Hawaii</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/idaho/" target="_blank">Idaho</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/illinois/" target="_blank">Illinois</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/indiana/" target="_blank">Indiana</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/iowa/" target="_blank">Iowa</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/kansas/" target="_blank">Kansas</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/kentucky/" target="_blank">Kentucky</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/louisiana/" target="_blank">Louisiana</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/maine/" target="_blank">Maine</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/maryland/" target="_blank">Maryland</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/massachusetts/" target="_blank">Massachusetts</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/michigan/" target="_blank">Michigan</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/minnesota/" target="_blank">Minnesota</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/mississippi/" target="_blank">Mississippi</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/missouri/" target="_blank">Missouri</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/montana/" target="_blank">Montana</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/nebraska/" target="_blank">Nebraska</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/nevada/" target="_blank">Nevada</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/new-hampshire/" target="_blank">New Hampshire</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/new-jersey/" target="_blank">New Jersey</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/new-mexico/" target="_blank">New Mexico</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/new-york/" target="_blank">New York</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/north-carolina/" target="_blank">North Carolina</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/north-dakota/" target="_blank">North Dakota</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/ohio/" target="_blank">Ohio</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/oklahoma/" target="_blank">Oklahoma</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/oregon/" target="_blank">Oregon</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/pennsylvania/" target="_blank">Pennsylvania</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/rhode-island/" target="_blank">Rhode Island</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/south-carolina/" target="_blank">South Carolina</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/south-dakota/" target="_blank">South Dakota</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/tennessee/" target="_blank">Tennessee</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/texas/" target="_blank">Texas</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/utah/" target="_blank">Utah</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/vermont/" target="_blank">Vermont</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/virginia/" target="_blank">Virginia</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/washington/" target="_blank">Washington</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/west-virginia/" target="_blank">West Virginia</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/wisconsin/" target="_blank">Wisconsin</a></li>
+                  <li><a class="dropdown-item" href="https://www.campusexplorer.com/colleges/state/wyoming/" target="_blank">Wyoming</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Careerpath.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about options in career paths">Career Path</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Degrees.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about the types of degrees">Degrees</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tuition.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about financial information about tuition">Tuition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Living&Costs.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn abour living options & costs associated with it">Living & Costs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Activities.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how you can get involved in activities">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Majors.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about education classification in colleges">Majors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Courses.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how to organize your classes">Courses</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stay updated on college info">Updates</a>
+              </li>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Get to know a little bit about us">
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Meet the Creators</a></li>
+                    <li><a class="dropdown-item" href="#">Meet our Sponsors</a></li>
+                    <li><a class="dropdown-item" href="#">Meet our Supporters</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Let's talk!">Contact Us</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          <br>
+    <h2 style="text-align:center;">Majors 🧑‍🏫</h2>
+    <div class="Intro">
+      <div style="width:1010px;height:220px;background-color:white;display:inline-block;text-align:center;">
+        <p>The biggest factor in deciding what you will do in college is your major as this helps to pick the courses that are required of you. Thinkng about your major and deciding what you are going to do can be challenging as you may not know what you want to do with your career yet. You are stuck in this place thinking you can't go to college without a plan. A few ways to start thinking about what you want to major in is finding out what you are interested in through the careers you think you could go into for the rest of your life so it's always best to get hands-on experience or real-life shadowing in different professions. Connecting your interests to school can help by connecting the hobbies that you are interested in. You can even go undecided for the first year of college as you take general requirements but at one point you will eventually have to pick a major that works best for you. Thankfully, we have attached some quizzes and some popular majors throughout America so you can get some guidance about which major you could pick.</p>
+      </div>
+    </div>
+    <div class="offset">
+    <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Deciding A Major Resources
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Majors</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          The data for the common majors of 2022 were provided a study done by Forbes but keep in mind that it did not include every single college in the U.S. but is very representative of what majority of students pick. If you would like to see by state, please click on the last link in the dropdown menu.
+        </div>
+        <br>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Common College Majors
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item">Business</a></li>
+            <li><a class="dropdown-item">Nursing</a></li>
+            <li><a class="dropdown-item">Psychology</a></li>
+            <li><a class="dropdown-item">Biology</a></li>
+            <li><a class="dropdown-item">Medicine/Pre-Medicine</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item active" href="https://bold.org/blog/most-popular-college-majors/" target="_blank">Popular College Majors</a></li>
+          </ul>
+        </div>
+        <br>
+        <div>
+          Here is a quiz to take if you cannot figure out which major you want to go into. Even though this may not pull up all the majors at every college, you can use the results to gauge which type of major category you want to go into.
+        </div>
+        <br>
+        <div class="butt">
+        <a href="https://www.usnews.com/best-colleges/college-major-quiz" target="_blank"><button type="button" class="btn btn-outline-danger">Majors Quiz</button></a>
+        </div>
+        <br>
+        <div class="card2">
+          <div class="card" style="width: 18rem;">
+            <img src="https://i.ytimg.com/vi/i_T-k5pq1kc/maxresdefault.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">College Major</h5>
+              <p class="card-text">Choose the right major for you!</p>
+              <a href="https://www.youtube.com/watch?v=i_T-k5pq1kc" class="btn btn-primary">How to Choose a College Major</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <div class="mover">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://galined.com/wp-content/uploads/2017/05/k54v9hraig7aab9xky7k.jpg" style="width:500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.insider.com/545a74926bb3f7ee0f8b456d?width=1000&format=jpeg&auto=webp" style="width:500px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_34/2054206/170627-textbooks-ac-932p.jpg" style="width:500px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br>
+    <div class="Alert" style="width:950px;margin:auto;">
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+          Reminder - Document what majors you are interested in and what is offered by colleges on your excel sheet!
+        </div>
+      </div>
+    </div> 
+    <h3 style="text-align:center;">Standardized Exams 📝</h3>
+    <div class="tests">
+      <div style="width:1010px;height:190px;background-color:white;display:inline-block;text-align:center;">
+        For careers that require higher education and sometimes for some jobs, standardized exams are required to be taken. No matter what degree you go into, you will have to face exams in college as they are the most common way to test your knowledge. Standardized exams are just upscaled models of those exams but usually contain a greater extent of information while needing to study for it outside of the time spent for college and other activities. It is important to figure out which exams you need to take for the professional career you want to go into and plan from ahead when and where you should take the exam. To learn more about which tests you may have to take, please go to the website below and learn about how to study and when to start studying for those exams so you can be prepared. 
+      </div>
+    </div>
+    <div class="Yo text-center">
+    <a href="https://educationusa.state.gov/your-5-steps-us-study/research-your-options/graduate/prepare-us-standardized-tests" target="_blank"><button type="button" class="btn btn-warning btn-lg">Exams Info</button></a>
+    </div>
+    <br>
+    <div class="Vid">
+      <iframe width="700" height="394" src="https://www.youtube.com/embed/DBLjaX72Fqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div class="Alert" style="width:950px;margin:auto;">
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+          Reminder - Document which standardized exams you have to take based on your career interest on your excel sheet and write when you plan to study for them on your course sheet!
+        </div>
+      </div>
+    </div> 
+    <br>
+    <h3 style="text-align:center;"> Courses 📋</h3>
+    <div class="skeet">
+      <div style="width:1010px;height:300px;background-color:white;display:inline-block;text-align:center;">
+        <p>After picking a major and deciding which college you will go to, it is now time to pick the courses that you need to take. However, this can be very stressful as you need to figure out which classes you need to take and when to take them. It gets even harder if it is a bigger college as there are much more classes to choose from with more people to compete with. This is why you should schedule which courses you need to take from beforehand with an excel sheet. You can figure out what classes you need to take based on the classes you need for your degree or based on the prerequisites that are needed for your target graduate schools. Some of your high school classes such as AP, IB, or dual credit classes can be transferred to your college to cover classes and give you credits. It's very important to check through the prerequisites for classes as you may need to take courses previously to get into higher level courses, take corequisites with some classes, and check the description for the requirements and level of proficiency needed for each class. It is recommended to make connections with upperclassmen or people who have previously taken the class to figure out the difficulty and the best way to succeed in the class. To make future planning easier for you, we have provided an excel sheet which allows you to document everything so you can make the right level of difficulty for each semester and build your own schedule.</p>
+      </div>
+    </div>
+    <div class="sike">
+        <button class="btn btn-danger btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Courses Resource</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Courses Resources</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+                Here is the excel sheet which you can use to organize. Also there is another tab on the sheet which you can use to organize your activities so it can be easier to refer back to them later!
+            </div>
+            <br>
+            <div class="but1">
+                <a href="https://docs.google.com/spreadsheets/d/1dEn5GB_TlpCDqGOqmleW5BOnfm5GUrwjoZbvAl-3ukg/edit?usp=sharing" target="_blank"><button type="button" class="btn btn-success">Courses Excel Sheet</button></a>
+            </div>
+            <br>
+            <div>
+                You should also check through what previous students have said about professors and learn how to pass the class with proven methods using this website below. Many people give their honest ratings and can help you figure out which professor is best.
+            </div>
+            <br>
+            <div class="but2">
+                <a href="https://www.ratemyprofessors.com/" target="_blank"><button type="button" class="btn btn-dark">ratemyprofessors.com</button></a>
+            </div>
+            <br>
+            <div>
+                You will have to consider course materials which can range from textbooks to online systems and should be factored in your college cost. However, this price can reduced if you can find online free versions of your book! Here is a website where you can try to search for it :)
+            </div>
+            <br>
+            <div class="but3">
+                <a href="https://u1lib.org/" target="_blank"><button type="button" class="btn btn-secondary">Zlibrary</button></a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="Alert" style="width:950px;margin:auto;">
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+          <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+          <div>
+            Reminder - Document the courses you will be taking (after you decide on a college) on your courses excel sheet!
+          </div>
+        </div>
+    </div> 
+    <br>
+    <h4 style="text-align:center">My Checklist ✅</h4>
+        <div class="check">
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            Write down preferred majors
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            Write down the majors available at every college
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            Write down the standardized exams needed for careers
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            Write down the courses needed to be taken
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            Write down progress of courses and activities throughout college (just a reminder check)
+          </label>
+        </div>
+        </div>
+        <br>
+        <div class="Footer">
+          <div style="width:1519px;height:300px;background-color:black;display:inline-block;justify-content:center;">
+            <footer>
+              <br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-1">
+                    <strong style="color:white;"><u>Pages</u></strong>
+                    <a class="nav-link active" aria-current="page" href="Intro.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Introduction with Navigation" style="color:white;">Home</a>                 
+                    <a class="nav-link" href="Location.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how location affects college choice." style="color:white;">Location</a>
+                    <a class="nav-link" href="Careerpath.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about options in career paths" style="color:white;">Career Path</a>
+                    <a class="nav-link" href="Degrees.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about the types of degrees" style="color:white;">Degrees</a>
+                    <a class="nav-link" href="Tuition.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about financial information about tuition" style="color:white;">Tuition</a>
+                  </div>
+                  <div class="col-2"> 
+                    <strong style="color:black;">Page</strong>
+                    <a class="nav-link" href="Living&Costs.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn abour living options & costs associated with it" style="color:white;">Living & Costs</a>            
+                    <a class="nav-link" href="Majors.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about education classification in colleges" style="color:white;">Majors</a>
+                    <a class="nav-link" href="Courses.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how to organize your classes" style="color:white;">Courses <span style="color:black">some shit bro come on where </span></a>
+                    <a class="nav-link" href="Activities.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how you can get involved in activities" style="color:white;">Activities</a>
+                    <a class="nav-link" href="Admissions.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn about how you can apply for college & requirements" style="color:white;">Admissions</a>
+                  </div>
+                  <div class="col-5 align-self-end"> 
+                    <img src="logo.jpg" style="width:400px;">
+                    <br>
+                    <br>
+                    <p style="color:darkgray"> This website is intended for strictly educational purposes and does not endorse any brands even under sponsorship. We do not intend to advertise nor distribute any items through this website as we serve to inform viewers with unbiased facts. For further inquiries please contact us.</p>                 
+                  </div>
+                  <div class="col-2"> 
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stay updated on college info" style="color:white;"><strong><u>Stay Updated!</u></strong></a>   
+                    <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn more about us" style="color:white;"><strong><u>About Us</u></strong></a>   
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Know who 'we' are" style="color:white;">Meet our Creators</a>   
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Companies and organizations that support us" style="color:white;">Meet our Sponsors</a>   
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Meet the people who have been impacted by this site" style="color:white;">Meet our Supporters</a>   
+                    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stay updated on college info" style="color:white;"><strong><u>Contact Us</u></strong></a>   
+                  </div>
+                  <div class="col-2">
+                    <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stay updated on college info" style="color:white;"><strong><u>Resources</u></strong></a>   
+                    <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1-nSZSKIoDFMuD6QHJCkYfL9B_kUvKJ3eaQ9UnZAncjw/edit?usp=sharing" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Our ultimate organizer for deciding between colleges" style="color:white;">The College Cheatsheet</a>   
+                    <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1dEn5GB_TlpCDqGOqmleW5BOnfm5GUrwjoZbvAl-3ukg/edit?usp=sharing" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Organize your classes through this sheet" style="color:white;">Courses Organizer</a>   
+                    <a class="nav-link" href="https://docs.google.com/spreadsheets/d/143oFNcYUF9qcLsVt43ayOyj0i5K0yoYEJMgQRz99D10/edit?usp=sharing" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Document your extracurriculars through this sheet" style="color:white;">Activities Organizer</a>   
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+          </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
